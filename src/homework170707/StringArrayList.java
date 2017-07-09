@@ -25,13 +25,17 @@ public class StringArrayList {
 	
 	@Override
 	public String toString() {
-		return Arrays.toString(elements);
+		StringBuilder sb = new StringBuilder("[");
+		for (int i = 0; i < elements.length; i++) {
+			if (i == elements.length -1 ) {
+				sb.append(elements[i]);
+			} else {
+				sb.append(elements[i]).append(", ");
+			}
+		}
+		sb.append("]");
+		return sb.toString();
 	}
-	
-	//  [a,b,c,d,e,_]
-	//   0 1 2 3 4 5
-	//  [a,b,d,e,_,_]
-	//   0 1 2 3 4 
 
 	public void remove(int i) {
 		if (i >= size || i < 0) {
@@ -68,7 +72,4 @@ public class StringArrayList {
 			}
 		}
 	}
-	
-	
-
 }
