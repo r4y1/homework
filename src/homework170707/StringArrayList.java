@@ -48,6 +48,10 @@ public class StringArrayList {
 		return result;
 	}
 	
+	public void set(int index, String string) {
+		elements[index] = string;
+	}
+	
 	
 
 }
