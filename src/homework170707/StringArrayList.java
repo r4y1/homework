@@ -56,6 +56,10 @@ public class StringArrayList {
 		return elements.length;
 	}
 	
+	public boolean isEmpty() {
+		return elements.length > 0;
+	}
+	
 	
 
 }
