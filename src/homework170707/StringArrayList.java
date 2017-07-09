@@ -52,6 +52,10 @@ public class StringArrayList {
 		elements[index] = string;
 	}
 	
+	public int size() {
+		return elements.length;
+	}
+	
 	
 
 }
