@@ -18,8 +18,7 @@ public class StringMethods{
 	}
 	
 	static String trim(String str) {
-		String result = "";
-		
+		String result = str;
 		return result;
 	}
 	
