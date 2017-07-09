@@ -60,6 +60,15 @@ public class StringArrayList {
 		return elements.length > 0;
 	}
 	
+	public void remove(String str) {
+		OUTER: for (int i = 0; i < elements.length; i++) {
+			if (str.equals(elements[i])) {
+				elements[i] = null;
+				break OUTER;
+			}
+		}
+	}
+	
 	
 
 }
