@@ -15,6 +15,21 @@ public class StringMethodsTest {
 		
 		
 		Asserts.assertEquals(StringMethods.trim("test"), "test");
+		Asserts.assertEquals(StringMethods.trim("    test"), "test");
+		Asserts.assertEquals(StringMethods.trim("test         "), "test");
+		Asserts.assertEquals(StringMethods.trim("        test  "), "test");
+		Asserts.assertEquals(StringMethods.trim("   te st  "), "te st");
+		Asserts.assertEquals(StringMethods.trim("t e s t"), "t e s t");
+		Asserts.assertEquals(StringMethods.trim("te st"), "te st");
+		Asserts.assertEquals(StringMethods.trim("t es t"), "t es t");
+		Asserts.assertNotEquals(StringMethods.trim("    test"), "    test");
+		Asserts.assertNotEquals(StringMethods.trim("test"), "test   ");
+		Asserts.assertNotEquals(StringMethods.trim("test"), "tes t   ");
+		Asserts.assertNotEquals(StringMethods.trim("test"), "   t e s t    ");
+
+
+
+
 		
 		
 		

@@ -18,7 +18,21 @@ public class StringMethods{
 	}
 	
 	static String trim(String str) {
-		String result = str;
+		String result;
+		int head = 0;
+		int tail= str.length();
+		char[] buff = str.toCharArray();
+		while (head < str.length() && buff[head] <= ' ') {
+			head++;
+		}
+        while ((head < tail) && (buff[tail - 1] <= ' ')) {
+            tail--;
+        }
+        if (head > 0 || tail < str.length()) {
+        	result = str.substring(head, tail);
+        } else {
+        	result = str;
+        }
 		return result;
 	}
 	
