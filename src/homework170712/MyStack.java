@@ -1,5 +1,7 @@
 package homework170712;
 
+import java.util.Arrays;
+
 public class MyStack {
 
 
@@ -36,6 +38,15 @@ public class MyStack {
 
     public int size() {
         return size;
+    }
+
+    public String tos() {
+        return size <= 0 ? null : array[size - 1];
+    }
+
+    @Override
+    public String toString() {
+        return Arrays.toString(Arrays.copyOfRange(array, 0, size));
     }
 
 
