@@ -1,4 +1,4 @@
-package string2;
+package codingbat.string2;
 
 public class EndOther {
 	boolean endOther(String a, String b) {

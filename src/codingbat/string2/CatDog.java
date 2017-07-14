@@ -1,4 +1,4 @@
-package string2;
+package codingbat.string2;
 
 public class CatDog {
 	boolean catDog(String str) {
