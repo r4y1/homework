@@ -1,10 +1,10 @@
-package codingbat.string2;
+package string2;
 
 public class XyBalance {
 
-	boolean xyBalance(String str) {
+	boolean xyBalance(final String str) {
 		boolean isXyBalanced = false;
-		int lastXindex = str.lastIndexOf('x');
+		final int lastXindex = str.lastIndexOf('x');
 		if (str.indexOf('x') < 0) {
 			isXyBalanced = true;
 		}

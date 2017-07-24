@@ -1,7 +1,7 @@
-package codingbat.string2;
+package string2;
 
 public class CatDog {
-	boolean catDog(String str) {
+	boolean catDog(final String str) {
 		int cat = 0;
 		int dog = 0;
 		for (int i = 0; i < str.length() - 2; i++) {
@@ -12,7 +12,7 @@ public class CatDog {
 				dog++;
 			}
 		}
-		boolean result = cat == dog;
+		final boolean result = cat == dog;
 		return result;
 	}
 }

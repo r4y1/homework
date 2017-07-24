@@ -1,11 +1,11 @@
-package codingbat.string2;
+package string2;
 
 public class CountCode {
-	int countCode(String str) {
+	int countCode(final String str) {
 		int count = 0;
 		for (int i = 0; i < str.length() - 3; i++) {
 			if (str.substring(i, i + 2).equals("co") &&
-				str.substring(i + 3, i + 4).equals("e")) {
+					str.substring(i + 3, i + 4).equals("e")) {
 				count++;
 			}
 		}

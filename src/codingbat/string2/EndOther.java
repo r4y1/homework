@@ -1,10 +1,10 @@
-package codingbat.string2;
+package string2;
 
 public class EndOther {
-	boolean endOther(String a, String b) {
+	boolean endOther(final String a, final String b) {
 		boolean isEndOther;
-		int aLen = a.length();
-		int bLen = b.length();
+		final int aLen = a.length();
+		final int bLen = b.length();
 		if (aLen > bLen) {
 			isEndOther = a.substring(aLen - bLen, aLen).toLowerCase().equals(b.toLowerCase());
 		} else {

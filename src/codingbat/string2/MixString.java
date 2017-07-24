@@ -1,9 +1,9 @@
-package codingbat.string2;
+package string2;
 
 public class MixString {
-	String mixString(String a, String b) {
-		StringBuilder result = new StringBuilder();
-		int minLen = Math.min(a.length(), b.length());
+	String mixString(final String a, final String b) {
+		final StringBuilder result = new StringBuilder();
+		final int minLen = Math.min(a.length(), b.length());
 		for (int i = 0; i < minLen; i++) {
 			result.append(a.charAt(i)).append(b.charAt(i));
 		}

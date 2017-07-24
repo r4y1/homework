@@ -1,7 +1,7 @@
-package codingbat.string2;
+package string2;
 
 public class XyzThere {
-	boolean xyzThere(String str) {
+	boolean xyzThere(final String str) {
 		boolean isXyzThere = false;
 		if (str.length() >= 3 && str.substring(0, 3).equals("xyz")) {
 			isXyzThere = true;
