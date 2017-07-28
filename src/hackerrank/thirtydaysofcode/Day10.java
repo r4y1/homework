@@ -5,18 +5,19 @@ import java.util.Scanner;
 public class Day10 {
 
     public static void main(String[] args) {
-        // TODO
-        Scanner scanner = new Scanner(System.in);
-        int number = scanner.nextInt();
-        scanner.close();
-        String s = Integer.toBinaryString(number);
-        int result = 1;
-        for (int i = 0; i < s.length() - 1; i++) {
-            if (s.charAt(i) == s.charAt(i + 1)) {
-                result += 1;
+        Scanner in = new Scanner(System.in);
+        int number = in.nextInt();
+        int counter = 0, max = 0;
+        while (number > 0) {
+            int rem = number % 2;
+            if (rem==1) {
+                counter++;
             }
+            else counter = 0;
+            max = Math.max(counter, max);
+            number /= 2;
         }
-        System.out.println(result);
+        System.out.println(max);
     }
 
 }
