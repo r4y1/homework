@@ -1,4 +1,4 @@
-package array1;
+package codingbat.array1;
 
 public class Front11 {
 	int[] front11(int[] a, int[] b) {

@@ -1,4 +1,4 @@
-package array1;
+package codingbat.array1;
 
 public class FirstLast6 {
 	static boolean firstLast6(int[] nums) {

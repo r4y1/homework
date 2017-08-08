@@ -1,4 +1,4 @@
-package array1;
+package codingbat.array1;
 
 public class Start1 {
 	int start1(int[] a, int[] b) {

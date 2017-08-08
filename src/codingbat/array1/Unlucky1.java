@@ -1,4 +1,4 @@
-package array1;
+package codingbat.array1;
 
 public class Unlucky1 {
 	boolean unlucky1(int[] nums) {

@@ -1,4 +1,4 @@
-package array1;
+package codingbat.array1;
 
 public class MaxEnd3 {
 	int[] maxEnd3(int[] nums) {

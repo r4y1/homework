@@ -1,4 +1,4 @@
-package array1;
+package codingbat.array1;
 
 public class Make2 {
 	int[] make2(int[] a, int[] b) {

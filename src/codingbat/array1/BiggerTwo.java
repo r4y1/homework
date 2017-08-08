@@ -1,4 +1,4 @@
-package array1;
+package codingbat.array1;
 
 public class BiggerTwo {
 	int[] biggerTwo(int[] a, int[] b) {

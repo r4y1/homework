@@ -1,4 +1,4 @@
-package array1;
+package codingbat.array1;
 
 public class Sum3 {
 	int sum3(int[] nums) {

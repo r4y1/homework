@@ -1,4 +1,4 @@
-package array1;
+package codingbat.array1;
 
 public class No23 {
 	boolean no23(int[] nums) {
